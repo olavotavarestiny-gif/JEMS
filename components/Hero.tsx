@@ -1,5 +1,7 @@
 'use client';
 
+import Icon from './Icon';
+
 import { useEffect, useRef, useState } from 'react';
 
 export default function Hero() {
@@ -47,11 +49,11 @@ export default function Hero() {
       <p className="eyebrow hero-eyebrow"><span /> ALTA JOALHARIA · ANGOLA</p>
       <h1 id="hero-title">Jóias com história.<br /><em>Valor que permanece.</em></h1>
       <p className="hero-description">Uma nova experiência de alta joalharia<br className="desktop-break" /> e leilões em Angola.</p>
-      <div className="hero-actions"><a href="#leiloes" className="button button-gold">Explorar leilões <span aria-hidden="true">↗</span></a><a href="#a-jems" className="button button-outline">Descobrir a JEMS</a></div>
+      <div className="hero-actions"><a href="#leiloes" className="button button-gold">Explorar leilões <span aria-hidden="true"><Icon name="arrow-up-right" /></span></a><a href="#a-jems" className="button button-outline">Descobrir a JEMS</a></div>
     </div>
     <div className="hero-bottom container">
-      <a className="scroll-cue" href="#a-jems"><span className="scroll-line" />UM UNIVERSO A DESCOBRIR <span aria-hidden="true">↓</span></a>
-      <button className="motion-control" onClick={toggle} aria-label={playing ? 'Pausar vídeo de fundo' : 'Reproduzir vídeo de fundo'}><span aria-hidden="true">{playing ? 'Ⅱ' : '▷'}</span><span>{playing ? 'Pausar' : reduced ? 'Reproduzir animação' : 'Reproduzir'}</span></button>
+      <a className="scroll-cue" href="#a-jems"><span className="scroll-line" />UM UNIVERSO A DESCOBRIR <span aria-hidden="true"><Icon name="arrow-down" /></span></a>
+      <button className="motion-control" onClick={toggle} aria-label={playing ? 'Pausar vídeo de fundo' : 'Reproduzir vídeo de fundo'}><span aria-hidden="true"><Icon name={playing ? 'pause' : 'play'} /></span><span>{playing ? 'Pausar' : reduced ? 'Reproduzir animação' : 'Reproduzir'}</span></button>
     </div>
     <span className="hero-side-note" aria-hidden="true">O VALOR DO INTEMPORAL</span>
   </section>;

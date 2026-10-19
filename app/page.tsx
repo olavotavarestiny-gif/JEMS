@@ -1,3 +1,4 @@
+import Icon from '@/components/Icon';
 import Image from 'next/image';
 import Header from '@/components/Header';
 import Hero from '@/components/Hero';
@@ -30,7 +31,7 @@ export default function Home() {
             <h2 id="manifesto-title">Há histórias<br />que merecem<br /><em>continuar.</em></h2>
             <p>Cada jóia guarda mais do que beleza. Guarda momentos, memórias e histórias que atravessam gerações.</p>
             <p>Na JEMS, acreditamos que o verdadeiro valor merece permanecer.</p>
-            <a className="text-link" href="#essencia">A essência da nossa marca <span aria-hidden="true">↗</span></a>
+            <a className="text-link" href="#essencia">A essência da nossa marca <span aria-hidden="true"><Icon name="arrow-up-right" /></span></a>
           </div>
         </div>
         <div className="manifesto-foot container"><span>JOALHARIA. MEMÓRIA. LEGADO.</span><span>UM NOVO OLHAR SOBRE O VALOR.</span></div>
@@ -42,10 +43,10 @@ export default function Home() {
           <div className="category-grid">
             {categories.map(item => <figure className={`category ${item.className}`} key={item.number} data-reveal>
               <div className="image-frame category-image"><Image src={item.image} alt={item.alt} fill sizes="(max-width: 767px) 88vw, (max-width: 1023px) 44vw, 29vw" /></div>
-              <figcaption><span className="category-number">{item.number}</span><div><h3>{item.title}</h3><p>{item.subtitle}</p></div><span className="category-mark" aria-hidden="true">◇</span></figcaption>
+              <figcaption><span className="category-number">{item.number}</span><div><h3>{item.title}</h3><p>{item.subtitle}</p></div><span className="category-mark" aria-hidden="true"><Icon name="diamond" /></span></figcaption>
             </figure>)}
           </div>
-          <div className="auctions-bottom"><p className="small-note">Composições ilustrativas. Não representam peças ou leilões disponíveis.</p><a href="#conceito" className="button button-dark">Conhecer o conceito <span aria-hidden="true">↗</span></a></div>
+          <div className="auctions-bottom"><p className="small-note">Composições ilustrativas. Não representam peças ou leilões disponíveis.</p><a href="#conceito" className="button button-dark">Conhecer o conceito <span aria-hidden="true"><Icon name="arrow-up-right" /></span></a></div>
           <div className="auction-concept" id="conceito" data-reveal>
             <div><p className="eyebrow">DESCOBRIR · APRECIAR · DAR CONTINUIDADE</p><h3>Uma nova história<br />começa num encontro.</h3></div>
             <div><p>Um leilão aproxima peças singulares de pessoas que reconhecem o seu valor. É uma oportunidade para descobrir, apreciar e dar continuidade à história de uma jóia.</p><p className="small-note">Esta apresentação explora o conceito. As condições de participação e os futuros leilões serão comunicados pelos canais oficiais da JEMS.</p></div>
@@ -68,7 +69,7 @@ export default function Home() {
 
       <section id="essencia" className="essence" aria-labelledby="essence-title">
         <div className="container essence-grid">
-          <div className="essence-copy" data-reveal><p className="eyebrow"><span className="small-rule" /> A ESSÊNCIA JEMS</p><h2 id="essence-title">Não é para<br />chamar atenção.<br /><em>É para permanecer<br />na memória.</em></h2><div className="essence-rule" /><p>Há uma elegância que dispensa palavras.<br />Uma presença que se reconhece.<br />Uma história que continua consigo.</p><a className="text-link" href="#filme">Sentir o universo JEMS <span aria-hidden="true">↗</span></a></div>
+          <div className="essence-copy" data-reveal><p className="eyebrow"><span className="small-rule" /> A ESSÊNCIA JEMS</p><h2 id="essence-title">Não é para<br />chamar atenção.<br /><em>É para permanecer<br />na memória.</em></h2><div className="essence-rule" /><p>Há uma elegância que dispensa palavras.<br />Uma presença que se reconhece.<br />Uma história que continua consigo.</p><a className="text-link" href="#filme">Sentir o universo JEMS <span aria-hidden="true"><Icon name="arrow-up-right" /></span></a></div>
           <figure className="essence-visual" data-reveal><div className="image-frame"><Image src="/assets/editorial.webp" alt="Fotografia vertical fornecida para o projecto: modelo com colar e brincos de pedras verdes" fill sizes="(max-width: 767px) 88vw, 39vw" /></div><figcaption>O VALOR DE UMA PRESENÇA.</figcaption></figure>
         </div>
       </section>
@@ -79,7 +80,7 @@ export default function Home() {
 
       <section id="contactos" className="invitation" aria-labelledby="invitation-title"><div className="container" data-reveal><p className="eyebrow">O PRÓXIMO CAPÍTULO</p><h2 id="invitation-title">O extraordinário<br />merece ser <em>descoberto.</em></h2><p>Conheça o universo da JEMS e descubra uma nova<br className="desktop-break" /> perspectiva sobre a alta joalharia.</p><Contact /><span className="contact-demo-label">CONTACTO DEMONSTRATIVO</span></div></section>
     </main>
-    <footer className="footer"><div className="container"><div className="footer-main"><div><Brand footer /><p>Jóias com história.<br />Valor que permanece.</p></div><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#a-jems">A JEMS</a><a href="#leiloes">Leilões</a><a href="#contactos">Contactos</a></nav><a className="back-top text-link" href="#inicio">Voltar ao início <span aria-hidden="true">↑</span></a></div><div className="footer-bottom"><p>© {new Date().getFullYear()} JEMS. Todos os direitos reservados.</p><p>ANGOLA · ALTA JOALHARIA</p></div><p className="demo-disclosure">Demonstração de Homepage para apresentação. Conceito e textos editoriais sujeitos a aprovação da JEMS. Sem licitações ou pagamentos.</p></div></footer>
+    <footer className="footer"><div className="container"><div className="footer-main"><div><Brand footer /><p>Jóias com história.<br />Valor que permanece.</p></div><nav aria-label="Navegação do rodapé"><a href="#inicio">Início</a><a href="#a-jems">A JEMS</a><a href="#leiloes">Leilões</a><a href="#contactos">Contactos</a></nav><a className="back-top text-link" href="#inicio">Voltar ao início <span aria-hidden="true"><Icon name="arrow-up" /></span></a></div><div className="footer-bottom"><p>© {new Date().getFullYear()} JEMS. Todos os direitos reservados.</p><p>ANGOLA · ALTA JOALHARIA</p></div><p className="demo-disclosure">Demonstração de Homepage para apresentação. Conceito e textos editoriais sujeitos a aprovação da JEMS. Sem licitações ou pagamentos.</p></div></footer>
     <Reveal />
   </>;
 }

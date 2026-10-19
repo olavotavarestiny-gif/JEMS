@@ -1,5 +1,7 @@
 'use client';
 
+import Icon from './Icon';
+
 import { useEffect, useRef, useState } from 'react';
 import Brand from './Brand';
 
@@ -48,7 +50,7 @@ export default function Header() {
     </div>
     <div className="mobile-menu" id="mobile-menu" ref={panel} hidden={!open} role="dialog" aria-modal="true" aria-label="Menu de navegação">
       <p className="eyebrow">O UNIVERSO JEMS</p>
-      <nav aria-label="Navegação móvel">{links.map((link, i) => <a href={link.href} key={link.href} onClick={() => { setOpen(false); trigger.current?.focus(); }}><span className="menu-index">0{i + 1}</span>{link.label}<span className="menu-arrow" aria-hidden="true">↗</span></a>)}</nav>
+      <nav aria-label="Navegação móvel">{links.map((link, i) => <a href={link.href} key={link.href} onClick={() => { setOpen(false); trigger.current?.focus(); }}><span className="menu-index">0{i + 1}</span>{link.label}<span className="menu-arrow" aria-hidden="true"><Icon name="arrow-up-right" /></span></a>)}</nav>
       <p className="mobile-menu-note">Jóias com história.<br />Valor que permanece.</p>
     </div>
   </header>;
