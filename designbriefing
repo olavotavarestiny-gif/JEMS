@@ -1,0 +1,636 @@
+# JEMS — LUXURY DIGITAL EXPERIENCE
+## Desenvolvimento Exclusivo da Homepage
+
+### 1. MISSÃO
+
+Actua como Director Criativo, Director de Arte Digital, Designer UX/UI especializado em marcas de luxo e Engenheiro Frontend Sénior.
+
+A tua missão é desenvolver exclusivamente a **Homepage da JEMS**, uma marca angolana que se apresenta como pioneira dos leilões de alta joalharia em Angola.
+
+O objectivo é criar uma demonstração visual premium, destinada à apresentação à direcção da empresa.
+
+**Não desenvolver outras páginas nesta fase.**
+
+Queremos uma Homepage extraordinariamente bem executada, e não um website inteiro com qualidade mediana.
+
+A experiência deve parecer concebida por um estúdio especializado em marcas de luxo.
+
+Não criar um template genérico.
+
+Não utilizar elementos visuais com aparência de design gerado automaticamente por inteligência artificial.
+
+O resultado deve ser elegante, cinematográfico, editorial, sofisticado e autenticamente JEMS.
+
+### 2. CONCEITO
+
+**JEMS — Jóias com história. Valor que permanece.**
+
+Esta é uma proposta de conceito para a demonstração, ainda não aprovada oficialmente.
+
+A campanha institucional da marca utiliza a mensagem:
+
+"Não é para chamar atenção. É para permanecer na memória."
+
+Toda a experiência deve transmitir esta ideia.
+
+O luxo deve manifestar-se através da composição, tipografia, fotografia e atenção ao detalhe.
+
+Não através de efeitos exagerados.
+
+### 3. IDENTIDADE VISUAL
+
+Utilizar os materiais originais da JEMS disponibilizados na pasta do projecto:
+
+- Logótipo oficial.
+- Campanha institucional verde-esmeralda.
+- Vídeo institucional `videodamarca.mp4`.
+
+Não recriar o logótipo.
+
+Não criar uma identidade alternativa.
+
+Não copiar websites de outras marcas.
+
+#### Paleta de cores
+
+- Verde profundo: `#003F37`
+- Verde-esmeralda: `#08796D`
+- Dourado suave: `#C9A47B`
+- Marfim: `#F5F0E8`
+- Preto profundo: `#111714`
+- Branco: `#FFFFFF`
+
+As cores são aproximações da identidade visual e podem ser refinadas com base nos materiais oficiais.
+
+O verde profundo será a cor institucional.
+
+O marfim dominará as secções editoriais de joalharia.
+
+O dourado deverá ser utilizado com moderação, principalmente em botões e detalhes.
+
+Não utilizar gradientes decorativos, dourado metálico artificial ou sombras exageradas.
+
+### 4. TIPOGRAFIA OBRIGATÓRIA
+
+Utilizar exactamente duas famílias tipográficas.
+
+**Cormorant Garamond**
+
+Para:
+- Títulos.
+- Frases editoriais.
+- Hero.
+- Mensagens institucionais.
+
+Pesos: 400 e 500.
+
+Desktop:
+- Hero: 88–112 px.
+- Títulos: 56–76 px.
+
+Mobile:
+- Hero: 48–64 px.
+- Títulos: 36–48 px.
+
+**Manrope**
+
+Para:
+- Navegação.
+- Botões.
+- Textos corridos.
+- Descrições.
+- Legendas.
+- Informações funcionais.
+
+Pesos: 400, 500 e 600.
+
+Corpo: 15–17 px.
+
+Botões: 12 px.
+
+Navegação: 12–13 px.
+
+Utilizar `next/font/google`, se estiveres a trabalhar com Next.js.
+
+Não utilizar outras famílias.
+
+### 5. DIRECÇÃO FOTOGRÁFICA
+
+Utilizar fotografias de alta joalharia provenientes da internet, com qualidade editorial e licenças adequadas.
+
+**Não utilizar fotogramas extraídos do vídeo institucional.**
+
+O vídeo será utilizado exclusivamente como recurso audiovisual.
+
+Procurar fotografias de:
+
+- Jóias douradas.
+- Diamantes.
+- Esmeraldas.
+- Anéis de luxo.
+- Colares sofisticados.
+- Brincos.
+- Pulseiras.
+- Jóias em fundos marfim.
+- Jóias sobre seda.
+- Fotografias macro de pedras preciosas.
+- Modelos com jóias elegantes.
+
+Direcção estética:
+
+- Fundos marfim e champanhe.
+- Tecidos de seda.
+- Texturas naturais.
+- Contraste entre ouro e verde-esmeralda.
+- Iluminação profissional.
+- Composições minimalistas.
+- Enquadramentos editoriais.
+
+Privilegiar imagens com resolução elevada, especialmente para secções amplas.
+
+Não utilizar fotografias pixelizadas, com marcas de água, logótipos de outras marcas ou aspecto artificial.
+
+Seleccionar imagens de fontes que permitam a utilização comercial prevista e documentar a origem e as condições de licença.
+
+Guardar as imagens no projecto, em `public/images/`.
+
+As fotografias seleccionadas são ilustrativas e não devem ser apresentadas como jóias efectivamente pertencentes à JEMS.
+
+### 6. VÍDEO INSTITUCIONAL
+
+Utilizar `videodamarca.mp4` como principal elemento da primeira secção.
+
+Criar uma versão optimizada de aproximadamente 8–12 segundos para reprodução automática no hero.
+
+Seleccionar os momentos mais cinematográficos do vídeo original.
+
+Privilegiar planos de jóias, pedras preciosas, trabalho artesanal e iluminação verde-esmeralda.
+
+Evitar sequências com legendas incorporadas que prejudiquem a leitura dos textos da interface.
+
+Configuração:
+
+- Autoplay.
+- Muted.
+- Loop.
+- PlaysInline.
+- Object-fit: cover.
+- Carregamento optimizado.
+- Poster estático para carregamento inicial.
+- Alternativa acessível para utilizadores com movimento reduzido.
+
+Não extrair fotogramas para as galerias editoriais.
+
+O vídeo completo também poderá ser reproduzido numa secção própria da Homepage.
+
+### 7. ESTRUTURA DA HOMEPAGE
+
+Criar uma experiência composta por sete secções principais.
+
+#### SECÇÃO 01 — HERO CINEMATOGRÁFICO
+
+Altura: aproximadamente 100svh.
+
+Fundo: vídeo institucional da JEMS.
+
+Cabeçalho transparente sobreposto.
+
+Logótipo oficial à esquerda.
+
+Menu minimalista à direita.
+
+Menu:
+
+- Início.
+- A JEMS.
+- Leilões.
+- Contactos.
+
+Como estamos a desenvolver apenas a Homepage, todos os links devem navegar para as respectivas secções da mesma página.
+
+Título principal:
+
+**"Jóias com história.
+Valor que permanece."**
+
+Texto secundário:
+
+"Uma nova experiência de alta joalharia e leilões em Angola."
+
+Botão principal:
+
+**EXPLORAR LEILÕES**
+
+Botão secundário:
+
+**DESCOBRIR A JEMS**
+
+Os botões devem deslocar o utilizador para as secções correspondentes.
+
+O hero deve transmitir imediatamente a identidade da marca.
+
+Não sobrecarregar a imagem com elementos.
+
+#### SECÇÃO 02 — MANIFESTO
+
+Fundo marfim.
+
+Composição editorial.
+
+Título:
+
+**"Há histórias que merecem continuar."**
+
+Texto sugerido:
+
+"Cada jóia guarda mais do que beleza. Guarda momentos, memórias e histórias que atravessam gerações. Na JEMS, acreditamos que o verdadeiro valor merece permanecer."
+
+Criar uma composição com tipografia marcante e espaços generosos.
+
+Utilizar, se adequado, uma fotografia editorial de jóias em fundo claro.
+
+Evitar cartões ou elementos decorativos desnecessários.
+
+#### SECÇÃO 03 — O UNIVERSO DOS LEILÕES
+
+Título:
+
+**"A arte de descobrir o extraordinário."**
+
+Apresentar o conceito dos leilões de alta joalharia de forma visual.
+
+Utilizar três composições fotográficas de elevada qualidade.
+
+Cada composição deverá representar uma categoria ilustrativa:
+
+- Anéis.
+- Colares.
+- Peças singulares.
+
+Não inventar leilões reais ou datas.
+
+Não apresentar preços fictícios como informações oficiais.
+
+Colocar uma indicação discreta de que as imagens são ilustrativas.
+
+Adicionar um botão:
+
+**CONHECER O CONCEITO**
+
+Este botão deve deslocar o utilizador para uma breve explicação, na mesma Homepage, sobre o funcionamento conceptual dos leilões. Não inventar regras operacionais específicas da JEMS.
+
+#### SECÇÃO 04 — GALERIA EDITORIAL
+
+Fundo marfim.
+
+Título:
+
+**"A beleza está nos detalhes."**
+
+Criar uma composição fotográfica de grande impacto.
+
+Utilizar imagens de alta joalharia em ouro, diamantes e esmeraldas.
+
+Alternar fotografias verticais e horizontais.
+
+Criar uma disposição editorial assimétrica.
+
+Não utilizar uma grelha genérica de comércio electrónico.
+
+Não apresentar nomes, preços ou certificações fictícias.
+
+A secção deve funcionar como uma exposição visual de alta joalharia.
+
+#### SECÇÃO 05 — A ESSÊNCIA JEMS
+
+Utilizar a campanha original verde-esmeralda fornecida.
+
+Preservar a fotografia, o logótipo e os textos originais.
+
+Não sobrepor novos textos aos elementos existentes.
+
+Criar uma composição que respeite o enquadramento vertical da campanha.
+
+A imagem deverá ser acompanhada de um pequeno texto editorial numa área separada.
+
+A composição deve reforçar a identidade própria da marca.
+
+#### SECÇÃO 06 — O FILME JEMS
+
+Fundo verde profundo.
+
+Título:
+
+**"Uma história que permanece."**
+
+Apresentar o vídeo institucional completo.
+
+Criar um leitor de vídeo elegante e acessível.
+
+O vídeo deve iniciar apenas após interacção do utilizador.
+
+Utilizar controlos funcionais de reprodução, pausa e som.
+
+Esta secção deve funcionar como um momento cinematográfico dentro da Homepage.
+
+#### SECÇÃO 07 — CONVITE E RODAPÉ
+
+Fundo verde profundo.
+
+Título:
+
+**"O extraordinário merece ser descoberto."**
+
+Texto:
+
+"Conheça o universo da JEMS e descubra uma nova perspectiva sobre a alta joalharia."
+
+Botão:
+
+**ENTRAR EM CONTACTO**
+
+Se existir um contacto oficial confirmado, utilizar um link funcional.
+
+Caso contrário, criar uma área demonstrativa de contacto claramente identificada, sem inventar telefone, e-mail ou WhatsApp.
+
+Rodapé:
+
+- Logótipo oficial.
+- Navegação para as secções da Homepage.
+- Redes sociais oficiais, caso sejam fornecidas.
+- Direitos reservados.
+
+### 8. SISTEMA DE BOTÕES
+
+#### Botão principal
+
+- Fundo: `#C9A47B`.
+- Texto: `#003F37`.
+- Fonte: Manrope 500.
+- Tamanho: 12 px.
+- Texto em maiúsculas.
+- Letter-spacing: 0.08em.
+- Altura: 50 px.
+- Padding horizontal: 30 px.
+- Border-radius: 0–2 px.
+- Sem sombra.
+- Sem gradiente.
+
+Hover:
+- Alteração subtil da cor de fundo.
+- Transição de 250 ms.
+
+#### Botão secundário
+
+- Fundo transparente.
+- Borda de 1 px.
+- Cor adaptada ao contraste do fundo.
+- Altura: 50 px.
+- Mesma tipografia.
+- Hover discreto.
+
+#### Links editoriais
+
+- Sem fundo.
+- Sublinhado fino ou seta minimalista.
+- Transição subtil.
+
+Todos os botões devem funcionar.
+
+Não criar botões decorativos sem acção.
+
+### 9. NAVEGAÇÃO
+
+Desktop:
+
+- Logótipo à esquerda.
+- Menu à direita.
+- Cabeçalho inicialmente transparente.
+- Fundo verde profundo após deslocação, quando adequado.
+- Transições discretas.
+
+Mobile:
+
+- Logótipo à esquerda.
+- Menu à direita.
+- Navegação elegante em painel ou ecrã completo.
+- Fundo verde profundo.
+- Fecho funcional.
+- Suporte para teclado e Escape.
+
+Todos os links navegam para secções internas da Homepage.
+
+Utilizar scroll suave, respeitando as preferências de movimento do utilizador.
+
+### 10. ANIMAÇÕES
+
+Utilizar apenas animações que contribuam para a experiência.
+
+Permitido:
+
+- Fade-in.
+- Reveal vertical subtil.
+- Hover discreto em fotografias.
+- Transições de menu.
+- Pequenos movimentos editoriais.
+
+Durações:
+
+- Botões: 200–300 ms.
+- Menus: 300–400 ms.
+- Revelações: 400–600 ms.
+
+Evitar:
+
+- Parallax agressivo.
+- Partículas.
+- Efeitos 3D.
+- Gradientes animados.
+- Animações excessivas.
+- Scroll hijacking.
+
+Respeitar `prefers-reduced-motion`.
+
+### 11. RESPONSIVIDADE
+
+Desenvolver a Homepage com elevada qualidade tanto em desktop como em mobile.
+
+Não limitar a versão móvel a uma simples reorganização automática.
+
+Adaptar:
+
+- Enquadramento do vídeo.
+- Tipografia.
+- Espaçamentos.
+- Fotografias.
+- Navegação.
+- Botões.
+- Composições editoriais.
+
+Breakpoints de referência:
+
+- Mobile: até 767 px.
+- Tablet: 768–1023 px.
+- Desktop: 1024 px ou superior.
+
+A experiência móvel deve ser tão refinada quanto a experiência desktop.
+
+### 12. TECNOLOGIA
+
+Se o repositório já possuir uma stack, respeitar a arquitectura existente.
+
+Se estiver vazio, utilizar:
+
+- Next.js com App Router.
+- TypeScript.
+- Tailwind CSS.
+- CSS personalizado.
+- Next/Image.
+- Next/Font.
+- Componentes reutilizáveis.
+
+Evitar bibliotecas de componentes com aparência pré-definida.
+
+Não instalar dependências desnecessárias.
+
+Organizar os componentes de forma clara.
+
+### 13. DESEMPENHO
+
+Optimizar:
+
+- Imagens.
+- Vídeo.
+- Fontes.
+- Carregamento inicial.
+- Responsividade.
+- Acessibilidade.
+
+O hero deve apresentar conteúdo útil mesmo antes do carregamento completo do vídeo.
+
+Evitar bloqueios de renderização.
+
+Utilizar imagens optimizadas e dimensões adequadas.
+
+Verificar o desempenho em dispositivos móveis.
+
+### 14. REGRAS DE AUTENTICIDADE
+
+Não inventar:
+
+- História da JEMS.
+- Datas de fundação.
+- Números de clientes.
+- Leilões realizados.
+- Peças disponíveis.
+- Certificações.
+- Testemunhos.
+- Contactos.
+- Parceiros.
+- Resultados comerciais.
+
+Todo o conteúdo editorial criado para a demonstração deve ser tratado como proposta de comunicação.
+
+As fotografias externas são ilustrativas e não representam inventário oficial.
+
+Não apresentar a plataforma como estando operacional para licitações ou pagamentos.
+
+### 15. PROCESSO DE EXECUÇÃO
+
+Trabalhar em cinco etapas.
+
+**Etapa 1 — Análise**
+
+Inspeccionar o repositório e todos os materiais oficiais.
+
+Verificar a qualidade do vídeo, a campanha e o logótipo.
+
+Identificar os recursos em falta.
+
+**Etapa 2 — Sistema Visual**
+
+Implementar:
+
+- Cores.
+- Tipografia.
+- Botões.
+- Cabeçalho.
+- Espaçamentos.
+- Componentes fundamentais.
+
+**Etapa 3 — Homepage**
+
+Construir as sete secções com elevada qualidade visual.
+
+Integrar o vídeo.
+
+Seleccionar fotografias de alta resolução com licenças adequadas.
+
+**Etapa 4 — Refinamento**
+
+Rever cuidadosamente:
+
+- Alinhamentos.
+- Espaçamentos.
+- Fotografia.
+- Hierarquia visual.
+- Animações.
+- Versão móvel.
+- Consistência da identidade.
+
+**Etapa 5 — Validação**
+
+Executar o projecto localmente.
+
+Verificar erros de compilação.
+
+Testar todos os botões.
+
+Confirmar a navegação.
+
+Verificar o desempenho e a responsividade.
+
+### 16. CRITÉRIOS DE SUCESSO
+
+Antes de concluir, avalia:
+
+1. A Homepage transmite o universo da JEMS?
+2. O design é verdadeiramente sofisticado?
+3. O vídeo está integrado com qualidade?
+4. As fotografias possuem resolução adequada?
+5. O website parece uma criação original?
+6. A tipografia está consistente?
+7. O ritmo visual é equilibrado?
+8. A versão mobile está bem desenhada?
+9. Todos os botões funcionam?
+10. A experiência está pronta para apresentação à direcção da marca?
+
+Se alguma secção parecer genérica, redesenha-a.
+
+Se alguma animação não acrescentar valor, remove-a.
+
+Se alguma fotografia não tiver qualidade, substitui-a.
+
+### INSTRUÇÃO FINAL
+
+**Desenvolve exclusivamente a Homepage da JEMS.**
+
+Não cries páginas interiores.
+
+Não implementes uma plataforma de leilões.
+
+Não cries backend de pagamentos.
+
+Não implementes funcionalidades comerciais complexas.
+
+A prioridade absoluta é construir uma experiência visual memorável, autêntica, responsiva e funcional.
+
+Utiliza o vídeo institucional como protagonista da primeira secção.
+
+Utiliza fotografias editoriais de alta joalharia em ouro, marfim e verde-esmeralda para as restantes composições.
+
+Respeita rigorosamente a identidade visual da JEMS.
+
+No final, disponibiliza a Homepage em ambiente local, com instruções para a visualizar.
+
+**Uma única página. Uma identidade forte. Uma experiência que permanece na memória.**
